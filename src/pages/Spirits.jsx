@@ -148,8 +148,6 @@ export default function Spirits({
 
   const [sort, setSort] = useState("featured");
 
-  const [filtersOpen, setFiltersOpen] = useState(false);
-
   // ===================================================
   // PAGE TITLE
   // ===================================================
@@ -167,19 +165,6 @@ export default function Spirits({
 
     return [...existingSpirits, ...DUMMY_SPIRIT_PRODUCTS];
   }, [products]);
-
-  // ===================================================
-  // AVAILABLE TYPES
-  // ===================================================
-
-  const spiritTypes = useMemo(() => {
-    return [
-      ...new Set(spiritProducts.map((product) => product.type).filter(Boolean)),
-    ];
-  }, [spiritProducts]);
-
-  // Prevent unused variable warning
-  void spiritTypes;
 
   // ===================================================
   // TYPE FILTER
