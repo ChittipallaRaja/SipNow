@@ -330,21 +330,21 @@ export default function Spirits({
       ========================================= */}
 
         <div className="mb-14">
-          {/* FULL COLLECTION */}
+          {/* All COLLECTION */}
 
           <div className="inline-flex px-5 py-2 rounded-full border border-primary/40 text-primary text-xs uppercase tracking-[0.2em] mb-8">
-            Full Collection
+            All Collection
           </div>
 
           {/* TITLE */}
 
-          <h1 className="font-serif text-5xl md:text-6xl text-on-surface">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-on-surface leading-tight">
             {pageTitle}
           </h1>
 
           {/* DESCRIPTION */}
 
-          <p className="mt-5 text-lg text-on-surface-variant">
+          <p className="mt-4 sm:mt-5 text-base sm:text-lg text-on-surface-variant max-w-3xl">
             {pageDescription}
           </p>
         </div>

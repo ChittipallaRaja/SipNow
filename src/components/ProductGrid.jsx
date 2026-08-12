@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard.jsx";
 
 const GRID_CLASSES =
-  "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-[repeat(auto-fill,minmax(var(--card-min-width),1fr))] gap-3";
+  "grid grid-cols-1 min-[480px]:grid-cols-2 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(var(--card-min-width),1fr))] gap-4";
 
 /** Product grid with empty state, shared by ShopAll, CategoryPage and InStorePromotions. */
 export default function ProductGrid({

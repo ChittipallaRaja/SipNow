@@ -8,7 +8,7 @@ import {
 } from "../utils/productHelpers.js";
 
 const SIZE = {
-  card: "rounded-xl p-3 space-y-3",
+  card: "rounded-xl p-2.5 sm:p-3 space-y-2.5 sm:space-y-3",
   imageWrap: "rounded-lg",
   badgePos: "top-2 left-2",
   badgePad: "px-2 py-1",
@@ -17,11 +17,11 @@ const SIZE = {
   plainBadgePad: "px-2 py-0.5",
   plainBadgeText: "text-[8px]",
   addBtnPos: "bottom-2.5 right-2.5",
-  addBtnSize: "h-9 w-9 hover:w-[128px]",
+  addBtnSize: "h-9 w-9 md:hover:w-[128px]",
   addIcon: "text-[14px]",
-  category: "text-[12px]",
-  name: "text",
-  price: "text",
+  category: "text-[10px] sm:text-[12px]",
+  name: "text-sm sm:text-base",
+  price: "text-sm sm:text-base",
 };
 
 const zeroCounts = (packSizes) =>
@@ -190,7 +190,7 @@ export default function ProductCard({
             )}
             <button
               aria-label={`Add ${product.name} to cart`}
-              className={`group/cart absolute z-20 flex items-center rounded-full primary-gradient text-white shadow-2xl overflow-hidden opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-out pl-[10px] gap-1.5 ${s.addBtnPos} ${s.addBtnSize}`}
+              className={`group/cart absolute z-20 flex items-center rounded-full primary-gradient text-white shadow-2xl overflow-hidden opacity-100 translate-y-0 md:opacity-0 md:group-hover:opacity-100 md:translate-y-4 md:group-hover:translate-y-0 transition-all duration-300 ease-out pl-[10px] gap-1.5 ${s.addBtnPos} ${s.addBtnSize}`}
               onClick={(e) => {
                 e.stopPropagation();
                 setExpanded(true);
